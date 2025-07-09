@@ -1,2 +1,22 @@
-# MyPortifolio-Site
-In this repository, I’m storing the final versions of my portfolio—essential for me, as a developer, to showcase my competencies and practical skills.
+# Douglas’s Virtual Portfolio
+
+### In this repository, I am storing the various iterations of my portfolio, in which I present my competencies, skills, projects, and contact information, among other details.
+
+<br />
+
+<hr />
+
+<br />
+
+## Current Status: In development; no final release available.
+
+### Schedule:
+
+July 6 – July 20: Initial portfolio version, focused on delivering a minimum viable product (MVP).
+
+July 21 – August 5: Enhanced portfolio version, featuring improved polish and a cohesive visual identity.
+
+Ongoing: Increase interactivity to create an experience that stands apart from standard market portfolios.
+
+
+To see more, visit:

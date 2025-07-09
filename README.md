@@ -4,6 +4,9 @@
 
 <br />
 
+To see more, visit: https://github.com/DouglasMedeiros1/MyPortifolio-Site/wiki
+
+
 <hr />
 
 <br />
@@ -18,5 +21,3 @@ July 21 – August 5: Enhanced portfolio version, featuring improved polish 
 
 Ongoing: Increase interactivity to create an experience that stands apart from standard market portfolios.
 
-
-To see more, visit: https://github.com/DouglasMedeiros1/MyPortifolio-Site/wiki

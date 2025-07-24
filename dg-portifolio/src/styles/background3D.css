@@ -1,0 +1,24 @@
+.background3d-container {
+  position: fixed;
+  width: 100vw;
+  max-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -5;
+  overflow: visible;
+}
+
+.background3d-container canvas {
+  width: 100% !important;
+  height: 100vh !important;
+  display: block;
+  background: transparent !important;
+}
+
+@media (max-width: 900px) {
+  .background3d-container {
+    height: 40vh;
+    min-height: 180px;
+  }
+}

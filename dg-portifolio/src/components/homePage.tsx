@@ -1,6 +1,6 @@
 import "../styles/styleHomePage.css"
 
-export default function HomePage() {
+export default function homePage() {
   return (
     <>
     <div id="Div-homepage">

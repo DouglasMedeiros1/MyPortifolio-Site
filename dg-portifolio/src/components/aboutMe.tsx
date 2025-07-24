@@ -1,6 +1,6 @@
 import '../styles/aboutMe.css'
 
-export default function AboutMe() {
+export default function aboutMe() {
     return (
         <>
         <div id='Div-aboutme'>

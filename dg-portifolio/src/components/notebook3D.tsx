@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
-import '../styles/background3D.css';
-import { EffectComposer, Bloom, Glitch } from '@react-three/postprocessing';
+import '../styles/notebook3D.css';
+import { EffectComposer, Glitch } from '@react-three/postprocessing';
 import { Vector2 } from 'three';
 
 function NotebookModel(props: any) {
@@ -9,13 +9,13 @@ function NotebookModel(props: any) {
   return <primitive object={scene} {...props} />;
 }
 
-export default function Background3D() {
+export default function Notebook3D() {
   // Necessário carregar o modelo GLB
   useGLTF.preload('/assets/3D/Notebook.glb');
 
   return (
     <div className="background3d-container">
-      <Canvas camera={{ position: [-42, 25, 90], fov: 29 }} shadows dpr={[1, 2]}>
+      <Canvas camera={{ position: [-42, 25, 90], fov: 30 }} shadows dpr={[1, 2]}>
         <ambientLight intensity={0.5} />
         <directionalLight
           position={[20, 40, 30]}
@@ -28,7 +28,6 @@ export default function Background3D() {
         />
         <NotebookModel scale={1.2} position={[-15, 1, 10]} />
         <EffectComposer>
-          <Bloom luminanceThreshold={0.15} luminanceSmoothing={0.9} intensity={1.2} />
           <Glitch
             delay={new Vector2(4, 4)}
             duration={new Vector2(0.6, 1.0)}

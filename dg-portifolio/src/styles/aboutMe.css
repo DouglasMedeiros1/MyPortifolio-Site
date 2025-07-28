@@ -8,12 +8,18 @@
 }
 
 #ImageDiv-aboutme {
-    width: 34vw;
 
+    width: 45vw;
+    overflow:visible;
+}
+
+#ImageDiv-aboutme canvas {
+    width: 100%;
+    height: 100%;
 }
 
 #ColumnDiv-aboutme {
-    width: 56vw;
+    width: 50vw;
 }
 
 #ColumnDiv-aboutme h1 {

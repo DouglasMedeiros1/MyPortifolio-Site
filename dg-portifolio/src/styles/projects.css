@@ -1,0 +1,9 @@
+#modelDanvasDiv-projects {
+  width: 60vw;
+  height: 80vh;
+}
+
+#modelCanvasDiv-projects Canvas {
+  width: 80%;
+  height: 80%;
+}

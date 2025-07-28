@@ -1,6 +1,15 @@
+import { OrbitControls, useGLTF } from '@react-three/drei';
 import '../styles/aboutMe.css'
+import { Canvas } from '@react-three/fiber';
+import { Bloom, EffectComposer } from '@react-three/postprocessing';
+
+function MeModel(props: any) {
+    const { scene } = useGLTF('/assets/3D/Me.glb');
+    return <primitive object={scene} {...props} />;
+  }
 
 export default function aboutMe() {
+    useGLTF.preload('/assets/3D/Me.glb');
     return (
         <>
         <div id='Div-aboutme'>
@@ -26,6 +35,7 @@ export default function aboutMe() {
                 </h2>
                 <hr />
                 <br />
+                {/*
                 <div id='ButtonsDiv-aboutme'>
                     <button id='github-button'>
                         <span className="icon-github" style={{display:'inline-flex',alignItems:'center',marginRight:'8px'}}>
@@ -40,11 +50,26 @@ export default function aboutMe() {
                         Linkedin
                     </button>
                 </div>
+                */}
             </div>
             <div id="ImageDiv-aboutme">
-                {/*
-                *Espaço para colcoar o Modelo 3D Futuramente*
-                */}
+            <Canvas camera={{ position: [30, 25, 90], fov: 27.5 }} shadows dpr={[1, 2]}>
+                <ambientLight intensity={0.5} />
+                <directionalLight
+                position={[20, 40, 30]}
+                intensity={2.5}
+                color={'#fff'}
+                castShadow
+                shadow-mapSize-width={2048}
+                shadow-mapSize-height={2048}
+                shadow-bias={-0.0005}
+                />
+                <MeModel scale={5} position={[-10, -32.5, 10]} />
+                <EffectComposer>
+                    <Bloom luminanceThreshold={0.15} luminanceSmoothing={0.9} intensity={1.2} />
+                </EffectComposer>
+                <OrbitControls enableZoom={false} enablePan={false} enableRotate={true} />
+                </Canvas>
             </div>
         </div>
         </>

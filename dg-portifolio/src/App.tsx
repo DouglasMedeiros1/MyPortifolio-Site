@@ -1,18 +1,24 @@
 import BackgroundTheme from "./components/backgroundTheme";
-import Background3D from "./components/background3D";
+import Notebook3D from "./components/notebook3D";
 
 import HomePage from "./components/homePage";
 import AboutMe from "./components/aboutMe";
+import Projects from "./components/projects";
+import Skills from "./components/skills";
 
 function App() {
   return (
     <>
       <BackgroundTheme />
-      <Background3D />
+      <Notebook3D />
 
       <HomePage />
     
       <AboutMe />
+
+      <Skills/>
+
+      <Projects />
     </>
   );
 }

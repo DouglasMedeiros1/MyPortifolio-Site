@@ -1,6 +1,6 @@
 .background3d-container {
-  position: fixed;
-  width: 100vw;
+  position: absolute;
+  width: 95vw;
   max-height: 95vh;
   display: flex;
   align-items: center;

@@ -14,7 +14,7 @@ export default function aboutMe() {
         <>
         <div id='Div-aboutme'>
             <div id='ColumnDiv-aboutme'>
-                <h1>Sobre Mim</h1>
+                <h1>SOBRE MIM</h1>
                 <h2 style={{fontSize: '1.2rem'}}>
                     My goal is always to meet client needs through adaptable, high-quality solutions, delivering my best every time. 
                 </h2>

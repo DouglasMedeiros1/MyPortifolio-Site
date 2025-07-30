@@ -79,18 +79,15 @@ export default function skills() {
             fallback.style.display = 'block';
         }
     };
-
-    // Create infinite loop by repeating items multiple times
     const createInfiniteItems = (technologies: typeof line1Technologies) => {
         return [...technologies, ...technologies, ...technologies, ...technologies];
     };
 
     return (
         <div className="skills-container">
-            <h2 className="skills-title" style={{fontFamily: 'Moonhouse'}}>Technologies & Tools</h2>
+            <h2 className="skills-title" style={{fontFamily: 'Moonhouse'}}>TECHNOLOGIES & TOOLS</h2>
             
             <div className="carousel-container">
-                {/* First line carousel */}
                 <div className="carousel-line">
                     <div className="carousel-track">
                         {createInfiniteItems(line1Technologies).map((tech, index) => (
@@ -107,8 +104,6 @@ export default function skills() {
                         ))}
                     </div>
                 </div>
-
-                {/* Second line carousel */}
                 <div className="carousel-line">
                     <div className="carousel-track reverse">
                         {createInfiniteItems(line2Technologies).map((tech, index) => (

@@ -16,6 +16,9 @@
     margin-bottom: 3rem;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    word-break: break-word;
+    letter-spacing: 0.05em;
+    line-height: 0.9;
 }
 
 .carousel-container {

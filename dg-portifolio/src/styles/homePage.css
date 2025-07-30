@@ -55,7 +55,8 @@
 
 @media (max-width: 750px) {
     #Div-homepage {
-        margin-top: 5vh;
+        margin-top: 30vh;
+        margin-bottom: 25vh;
     }
     #ModelDiv-homepage, #ColumnDiv-homepage {
         width: 98vw;
@@ -66,5 +67,11 @@
     
     #ColumnDiv-homepage {
         font-size: 1rem;
+    }
+    #ColumnDiv-homepage h2 {
+        margin-bottom: 10vh;
+    }
+    #ColumnDiv-homepage h4 {
+        font-size: 0.9rem;
     }
 }

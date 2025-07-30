@@ -3,6 +3,10 @@ import { useGLTF } from '@react-three/drei';
 import '../styles/notebook3D.css';
 import { EffectComposer, Glitch } from '@react-three/postprocessing';
 import { Vector2 } from 'three';
+import { useState, useEffect } from 'react';
+import { GLTFLoader } from 'three-stdlib';
+import Loading from './loading';
+
 
 function NotebookModel(props: any) {
   const { scene } = useGLTF('/assets/3D/Notebook.glb');
@@ -11,7 +15,29 @@ function NotebookModel(props: any) {
 
 export default function Notebook3D() {
   // Necessário carregar o modelo GLB
-  useGLTF.preload('/assets/3D/Notebook.glb');
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let mounted = true;
+    // Carrega o modelo GLB manualmente para controlar o loading
+    useGLTF.preload('/assets/3D/Notebook.glb');
+    const loader = new GLTFLoader();
+    loader.load(
+      '/assets/3D/Notebook.glb',
+      () => {
+        if (mounted) setLoading(false);
+      },
+      undefined,
+      () => {
+        if (mounted) setLoading(false); // fallback
+      }
+    );
+    return () => { mounted = false; };
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="background3d-container">
@@ -26,7 +52,7 @@ export default function Notebook3D() {
           shadow-mapSize-height={2048}
           shadow-bias={-0.0005}
         />
-        <NotebookModel scale={1.2} position={[-15, 1, 10]} />
+        <NotebookModel scale={1.2} position={[-15, -5, 10]} />
         <EffectComposer>
           <Glitch
             delay={new Vector2(4, 4)}

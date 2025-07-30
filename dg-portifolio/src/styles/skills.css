@@ -7,11 +7,12 @@
     align-items: center;
     overflow: hidden;
     width: 97%;
+    margin: 15vh auto;
 }
 
 .skills-title {
     color: white;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 3rem;
     text-align: center;
@@ -117,22 +118,9 @@
     }
 }
 
-/* Responsive design */
-@media (max-width: 1200px) {
-    .carousel-container {
-        width: 100%;
-    }
-    
-    .carousel-line {
-        width: 100%;
-    }
-    
-    .tech-item {
-        min-width: 110px;
-    }
-}
 
-@media (max-width: 768px) {
+
+@media (max-width: 1200px) {
     .skills-container {
         padding: 1rem;
     }
@@ -143,7 +131,7 @@
     }
     
     .carousel-container {
-        width: 100%;
+        width: 90%;
     }
     
     .carousel-line {
@@ -179,17 +167,22 @@
     }
 }
 
-@media (max-width: 480px) {
-    .skills-title {
-        font-size: 2.5rem;
+@media (max-width: 520px) {
+    .skills-container {
+        width: 90%;
+        margin: 0px;
+        align-items: center;
     }
-    
+    .skills-title {
+        font-size: 1.5rem;
+    }
     .carousel-container {
-        width: 100%;
+        width: 90%;
+        align-items: center;
     }
     
     .carousel-line {
-        width: 100%;
+        width: 95%;
         height: 65px;
     }
     
@@ -222,41 +215,5 @@
     
     .tech-name {
         font-size: 0.6rem;
-    }
-}
-
-@media (max-width: 360px) {
-    .skills-title {
-        font-size: 2rem;
-    }
-    
-    .carousel-line {
-        height: 60px;
-    }
-    
-    .carousel-track {
-        animation: scroll 20s linear infinite;
-    }
-    
-    .carousel-track.reverse {
-        animation: scroll-reverse 15s linear infinite;
-    }
-    
-    .tech-item {
-        min-width: 70px;
-        height: 40px;
-    }
-    
-    .tech-icon {
-        width: 1rem;
-        height: 1rem;
-    }
-    
-    .tech-fallback {
-        font-size: 0.8rem;
-    }
-    
-    .tech-name {
-        font-size: 0.55rem;
     }
 }

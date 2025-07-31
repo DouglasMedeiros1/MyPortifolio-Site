@@ -21,6 +21,12 @@
   pointer-events: none;
 }
 
+@media (max-width: 800px) {
+  .background3d-container {
+    display: none !important;
+  }
+}
+
 @media (max-width: 900px) {
   .background3d-container,
   .background3d-container canvas {

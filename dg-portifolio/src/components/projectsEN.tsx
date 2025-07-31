@@ -1,3 +1,4 @@
+// English version of Projects
 import { Canvas } from '@react-three/fiber';
 import '../styles/projects.css';
 import { useGLTF } from '@react-three/drei';
@@ -5,38 +6,39 @@ import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-const DataProjects = [{
-  title: "Sistema de Processamento de Dados de Estações Meteorológicas",
-  tags: ["FATEC", "Infraestrutura", "Aruitetura de Software", "Fullstack", "Equipe"],
-  description: ["Neste Projeto, recebemos o desafio de propor uma solução web que coletasse informações de sensores presentes em estações meteorológicas e apresentasse esses dados de forma intuitiva e prática ao usuário final. ", <br />, <br />,  "Além disso, também tivemos que lidar com outras necessidades do cliente, como configurar alarmes, gerar relatórios e ter uma interface de aprendizagem."],
-  contribuition: ["Neste projeto, pude contribuir com os quatro MVPs como o principal responsável. Pude participar de tudo, desde a configuração da estação meteorológica e sensores até a exibição desses dados, processamento dos dados e enriquecimento da correlação desses dados. ", <br />, <br />, "Portanto, pude melhorar minhas habilidades não apenas em Frontend, mas principalmente pude melhorar minhas habilidades em Bakcend, participando da criação de controles de dados, do coletor de dados e do processamento desses dados. ", <br />, <br />, "Além disso, com a implementação dos padrões Devops, pudemos aprender muito sobre documentação de um sistema como o nosso. Lidei especificamente com esses padrões aplicados ao banco de dados, versionamento e aplicação de cargas de dados naquele banco de dados. Também implementamos a implantação neste banco usando Supabase e Prisma (ORM) no desenvolvimento do sistema."],
-  tools: ["Typescript", "Node.js", "React", "Prisma", "PostgreSQL", "MongoDB", "Supabase", "Arduino", "Docker", "Google Cloud", "Github"],
-  link: "https://github.com/BananaScripts/Meteorological-Data-Collector"
-},
-{
-  title: "Sistema de Gestão de Ativos Internos de Empresas",
-  tags: ["FATEC", "Arquitetura de Software", "Product Owner", "Fullstack", "Equipe"],
-  description: ["Este projeto tem como objetivo desenvolver um sistema de gestão de ativos (SGA), fornecendo a uma empresa uma plataforma de gestão de ativos eficaz, com funcionalidades intuitivas, o SGA simplifica o processo de gestão de ativos, garantindo uma administração eficiente."],
-  contribuition: ["Neste projeto desenvolvi sistemas no frontend usando Typescript e mais uma vez consegui ocupar a posição de Product Owner por 3 das 4 Sprints, pois no quarto Sprint o grupo teve problemas de performance e precisou mudar funções. ", <br />, <br />, "Com novos membros no grupo, a dificuldade de gerenciamento foi maior, porém, não só participando, mas também definindo as prioridades e funcionalidades do sistema durante o kickoff do projeto, conseguimos ter uma melhor definição do que e como deveria ser feito. ", <br />, <br />, "Como desenvolvedor Frontend, consegui melhorar muito meus conhecimentos em Typescript e React em um sistema orientado a objetos. Além disso, por ter um backend mais isolado, por ser desenvolvido em Java, foi possível aprimorar ainda mais minhas habilidades individuais, entregando interfaces que receberam aprovação e satisfação do cliente."],
-  tools: ["Typescript", "React", "Node.js", "Java", "Spring Boot", "PostgreSQL", "Docker", "Git"],
-  link: "https://github.com/BananaaScript/SGA"
-},
-{
-  title: "Plataforma Móvel com Agentes de IA para Atendimento Interno",
-  tags: ["FATEC", "LLMs", "IAs", "Product Owner", "Fullstack", "Equipe"],
-  description: ["Este projeto tem como objetivo o desenvolvimento de uma plataforma de criação e gerenciamento de agentes de Inteligência Artificial. ", <br />, <br />, "A ferramenta permitirá que administradores criem múltiplos agentes virtuais personalizados, treinados para responder dúvidas específicas sobre diferentes sistemas e processos internos da empresa. Além disso, a solução deve contar com um sistema de permissões, onde cada usuário terá acesso apenas aos agentes aos quais foi autorizado."],
-  contribuition: "Neste Projeto, pude atuar como Product Owner e desenvolvedor Fullstack, onde pude desenvolver o sistema de backend e frontend. \n Como Product Owner, pude definir as prioridades do projeto e as funcionalidades que deveriam ser implementadas. \n Como desenvolvedor, pude ajudar meus colegas á entregarem soluções com perfeição, mas como PO mantive um contato transparente, continuo e real sobre o andamento do projeto durante todo o processo.",
-  tools: ["Typescript", "React Native", "Node.js", "Python", "C#", ".Net", "LLMs", "PostgreSQL", "MongoDB", "Docker", "Git"],
-  link: "https://github.com/BananaScripts/API_5-Semester"
-},
-{
-  title: "Site Institucional da Empresa",
-  tags: ["Neo Reformata", "Comercial", "Frontend", "Individual"],
-  description: ["Este projeto tem como objetivo desenvolver um site institucional para a empresa, com o intuito de apresentar os serviços oferecidos, a história da empresa e facilitar o contato com os clientes."],
-  contribuition: ["Neste projeto atuei sozinho como desenvolvedor Fullstack, onde pude desenvolver o site, definindo indentidade visual, layout e funcionalidades do site. ", <br />, <br />, "Pude desenvolver o site usando React e Typescript, com um backend em Node.js e um banco de dados em PostgreSQL. \n Além disso, pude implementar o site usando o Cpanel e Git para versionamento do código."],
-  tools: ["Typescript", "React", "Cpanel", "Git"],
-  link: "https://www.neoreformata.com.br/"
-}
+const DataProjects = [
+  {
+    title: "Meteorological Station Data Processing System",
+    tags: ["FATEC", "Infrastructure", "Software Architecture", "Fullstack", "Team"],
+    description: ["In this project, we were challenged to propose a web solution that collects information from sensors in meteorological stations and presents this data intuitively and practically to the end user.", <br />, <br />, "Additionally, we had to address other client needs, such as configuring alarms, generating reports, and providing a learning interface."],
+    contribuition: ["In this project, I contributed as the main responsible for all four MVPs. I participated in everything from setting up the meteorological station and sensors to displaying, processing, and enriching the correlation of this data.", <br />, <br />, "Therefore, I improved my skills not only in Frontend but mainly in Backend, participating in the creation of data controls, the data collector, and the processing of this data.", <br />, <br />, "Furthermore, with the implementation of DevOps standards, we learned a lot about system documentation. I specifically handled these standards applied to the database, versioning, and data loading. We also implemented deployment using Supabase and Prisma (ORM) during system development."],
+    tools: ["Typescript", "Node.js", "React", "Prisma", "PostgreSQL", "MongoDB", "Supabase", "Arduino", "Docker", "Google Cloud", "Github"],
+    link: "https://github.com/BananaScripts/Meteorological-Data-Collector"
+  },
+  {
+    title: "Internal Company Asset Management System",
+    tags: ["FATEC", "Software Architecture", "Product Owner", "Fullstack", "Team"],
+    description: ["This project aims to develop an asset management system (SGA), providing a company with an effective asset management platform. With intuitive features, the SGA simplifies the asset management process, ensuring efficient administration."],
+    contribuition: ["In this project, I developed frontend systems using Typescript and once again took on the role of Product Owner for 3 out of 4 Sprints. In the fourth Sprint, the group faced performance issues and had to change roles.", <br />, <br />, "With new members in the group, management became more challenging. However, by not only participating but also defining priorities and system features during the project kickoff, we achieved a better definition of what and how things should be done.", <br />, <br />, "As a Frontend developer, I greatly improved my knowledge in Typescript and React in an object-oriented system. Additionally, with a more isolated backend developed in Java, I was able to further enhance my individual skills, delivering interfaces that received client approval and satisfaction."],
+    tools: ["Typescript", "React", "Node.js", "Java", "Spring Boot", "PostgreSQL", "Docker", "Git"],
+    link: "https://github.com/BananaaScript/SGA"
+  },
+  {
+    title: "Mobile Platform with AI Agents for Internal Support",
+    tags: ["FATEC", "LLMs", "AIs", "Product Owner", "Fullstack", "Team"],
+    description: ["This project aims to develop a platform for creating and managing Artificial Intelligence agents.", <br />, <br />, "The tool will allow administrators to create multiple personalized virtual agents, trained to answer specific questions about different systems and internal company processes. Additionally, the solution should include a permissions system, where each user will have access only to the agents they are authorized for."],
+    contribuition: "In this project, I acted as Product Owner and Fullstack developer, developing both backend and frontend systems. As Product Owner, I defined project priorities and features to be implemented. As a developer, I helped my colleagues deliver perfect solutions, but as PO, I maintained transparent, continuous, and real communication about the project's progress throughout the process.",
+    tools: ["Typescript", "React Native", "Node.js", "Python", "C#", ".Net", "LLMs", "PostgreSQL", "MongoDB", "Docker", "Git"],
+    link: "https://github.com/BananaScripts/API_5-Semester"
+  },
+  {
+    title: "Company Institutional Website",
+    tags: ["Neo Reformata", "Commercial", "Frontend", "Individual"],
+    description: ["This project aims to develop an institutional website for the company, to present the services offered, the company's history, and facilitate contact with clients."],
+    contribuition: ["In this project, I worked alone as a Fullstack developer, developing the website, defining the visual identity, layout, and functionalities.", <br />, <br />, "I developed the site using React and Typescript, with a backend in Node.js and a PostgreSQL database. I also implemented the site using Cpanel and Git for code versioning."],
+    tools: ["Typescript", "React", "Cpanel", "Git"],
+    link: "https://www.neoreformata.com.br/"
+  }
 ]
 
 function Monitor3d(props: any) {
@@ -44,16 +46,13 @@ function Monitor3d(props: any) {
   return <primitive object={scene} {...props} />;
 }
 
-export default function Projects() {
+export default function ProjectsEN() {
   const [currentProject, setCurrentProject] = React.useState(0);
   const project = DataProjects[currentProject];
-
   const [targetPosition, setTargetPosition] = React.useState([0, 0, 0]);
   const [targetRotation, setTargetRotation] = React.useState([0, 0, 0]);
   const [position, setPosition] = React.useState([0, 0, 0]);
   const [rotation, setRotation] = React.useState([0, 0, 0]);
-
-  // Animation refs
   const textColumnRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
   const tagsRef = useRef<HTMLDivElement>(null);
@@ -61,7 +60,6 @@ export default function Projects() {
   const contribRef = useRef<HTMLDivElement>(null);
   const toolsRef = useRef<HTMLUListElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
-
   function linktoProject() {
     if (overlayRef.current) {
       gsap.to(overlayRef.current, { opacity: 1, duration: 0.8, ease: 'power2.inOut', onComplete: () => {
@@ -74,11 +72,9 @@ export default function Projects() {
       window.open(project.link, '_blank');
     }
   }
-
   React.useEffect(() => {
     changeModel3D(currentProject);
   }, []);
-
   const changeModel3D = (index: number) => {
     switch (index) {
       case 0:
@@ -102,7 +98,6 @@ export default function Projects() {
         setTargetRotation([0, 0.5, 0]);
     }
   }
-
   useEffect(() => {
     const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
     const threshold = 0.01;
@@ -130,8 +125,6 @@ export default function Projects() {
       if (frame) cancelAnimationFrame(frame);
     };
   }, [targetPosition, targetRotation]);
-
-  // Animate text out, change project, then animate in
   const animateProjectChange = (nextIndex: number) => {
     const tl = gsap.timeline();
     tl.to([
@@ -150,7 +143,6 @@ export default function Projects() {
         changeModel3D(nextIndex);
       }
     });
-    // Animate in after React state update
     setTimeout(() => {
       gsap.fromTo([
         titleRef.current,
@@ -163,18 +155,14 @@ export default function Projects() {
       );
     }, 180);
   };
-
   const handleNextProject = () => {
     const nextIndex = (currentProject + 1) % DataProjects.length;
     animateProjectChange(nextIndex);
   }
-
   const handlePrevProject = () => {
     const prevIndex = (currentProject - 1 + DataProjects.length) % DataProjects.length;
     animateProjectChange(prevIndex);
   }
-
-  // Animate li appearance on project change
   useEffect(() => {
     if (toolsRef.current) {
       gsap.set(toolsRef.current.querySelectorAll('li'), { opacity: 0, x: 40 });
@@ -188,10 +176,8 @@ export default function Projects() {
       });
     }
   }, [currentProject]);
-
   return (
     <>
-      {/* Overlay for fade out effect */}
       <div ref={overlayRef} style={{
         position: 'fixed',
         top: 0,
@@ -204,14 +190,10 @@ export default function Projects() {
         zIndex: 9999,
         transition: 'opacity 0.2s',
       }} />
-      <h2 id='titleH2-projects'>
-        PROJETOS QUE PARTICIPEI
-      </h2>
+      <h2 id='titleH2-projects'>PROJECTS I PARTICIPATED IN</h2>
       <div id='projectsDiv'>
         <div id='textColumnDiv-projects' ref={textColumnRef}>
-          <div id='titleDiv-projects' ref={titleRef}>
-            {project.title}
-          </div>
+          <div id='titleDiv-projects' ref={titleRef}>{project.title}</div>
           <br />
           <div id='tagsDiv-projects' ref={tagsRef}>
             {project.tags?.map((tag) => (
@@ -219,15 +201,11 @@ export default function Projects() {
             ))}
           </div>
           <br />
-          <h2>Descrição :</h2>
-          <div id='textDiv-projects' ref={descRef}>
-            {project.description}
-          </div>
+          <h2>Description :</h2>
+          <div id='textDiv-projects' ref={descRef}>{project.description}</div>
           <br />
-          <h2>Minha Contribuição :</h2>
-          <div id='textDiv-projects' ref={contribRef}>
-            {project.contribuition}
-          </div>
+          <h2>My Contribution :</h2>
+          <div id='textDiv-projects' ref={contribRef}>{project.contribuition}</div>
         </div>
         <div id='modelColumnDiv-projects'>
             <Canvas camera={{ position: [15, 6, 0], fov: 25 }} shadows dpr={[1, 2]}>
@@ -249,7 +227,7 @@ export default function Projects() {
             <div id='buttonsDiv-projects'>
               <button onClick={handlePrevProject}> Previous </button>
               <br />
-              <button style={{backgroundColor: "rgb(240, 248, 255, 0.2)"}} onClick={linktoProject}>Acesse o Projeto</button>
+              <button style={{backgroundColor: "rgb(240, 248, 255, 0.2)"}} onClick={linktoProject}>Access the Project</button>
               <br />
               <button onClick={handleNextProject}>Next</button>
             </div>

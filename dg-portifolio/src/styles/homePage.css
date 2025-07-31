@@ -2,8 +2,8 @@
 #Div-homepage {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    margin-right: 10vh;
+    justify-content: center;
+
     margin-top: 20vh;
     flex-wrap: wrap;
 

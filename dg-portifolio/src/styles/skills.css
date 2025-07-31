@@ -6,8 +6,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 97%;
-    margin: 15vh auto;
+    width: 95%;
+    margin: 15vh 1vw;
 }
 
 .skills-title {
@@ -120,9 +120,10 @@
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {
     .skills-container {
         padding: 1rem;
+        width: 90%;
     }
     
     .skills-title {

@@ -1,16 +1,17 @@
+// English version of AboutMe
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import '../styles/aboutMe.css'
 import { Canvas } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
-import { useEffect, useRef, useMemo, Suspense } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 function MeModel(props: any) {
     const { scene } = useGLTF('/assets/3D/Me.glb');
-    return useMemo(() => <primitive object={scene} {...props} />, [scene, props]);
-}
+    return <primitive object={scene} {...props} />;
+  }
 
-export default function AboutMe() {
+export default function AboutMeEN() {
     useGLTF.preload('/assets/3D/Me.glb');
     const h1Ref = useRef(null);
     const h2TopRef = useRef(null);
@@ -27,36 +28,32 @@ export default function AboutMe() {
         gsap.to(h3Ref.current, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out", delay: 0.6 });
         gsap.to(h2BottomRef.current, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out", delay: 0.8 });
         gsap.to(hrRef.current, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out", delay: 1 });
-
-
     }, []);
 
     return (
         <>
         <div id='Div-aboutme'>
             <div id='ColumnDiv-aboutme'>
-                <h1 ref={h1Ref}>SOBRE MIM</h1>
+                <h1 ref={h1Ref}>ABOUT ME</h1>
                 <h2 ref={h2TopRef} style={{fontSize: '1.2rem'}}>
-                    Meu objetivo é sempre atender às necessidades do cliente por meio de soluções adaptáveis e de alta qualidade, entregando o meu melhor a cada vez.
+                    My goal is always to meet client needs through adaptable, high-quality solutions, delivering my best every time. 
                 </h2>
                 <br />
                 <h3 ref={h3Ref}>
-                    - Tenho 20 anos e estudo desenvolvimento desde 2023.  <br />
-                    - Desenvolvedor Full-Stack, com maior foco no frontend. <br />
-                    - Experiência em projetos com metodologias ágeis/ scrum. <br />
-                    - Já atuei como Product Owner internamente na FATEC.<br />
-                    - Cursando Desenvolvimento de Software Multiplataforma.<br />
-
+                    - I'm 20 years old and have been studying development since 2023.  <br />
+                    - Full-Stack Developer, with a stronger focus on frontend. <br />
+                    - Experience in projects with agile/scrum methodologies. <br />
+                    - I've acted as Product Owner internally at FATEC.<br />
+                    - Studying Multiplatform Software Development.<br />
                 </h3>
                 <br />
                 <h2 ref={h2BottomRef}>
-                    Sou apaixonado por construir soluções modernas, tenho experiência com metodologias ágeis, projetos orientados a objetos e desenvolvimento full-stack. Trabalho em sistemas Web e Mobile utilizando React/React Native, Node.js e .NET, integrando frequentemente tecnologias de IA.
+                    Passionate about building modern solutions, I have experience with agile methodologies, object-oriented projects, and full-stack development. I work on Web and Mobile systems using React/React Native, Node.js, and .NET, often integrating AI technologies. 
                     <br /> <br />
-                    Atualmente, estou focado em aprofundar meus conhecimentos em Engenharia de Prompt, Arquitetura de Sistemas e aproveitando metodologias ágeis (Scrum) para criar soluções escaláveis e robustas.
+                    I'm currently focused on deepening my knowledge in Prompt Engineering, System Architecture, and leveraging agile methodologies (Scrum) to create scalable and robust solutions.      
                 </h2>
                 <hr ref={hrRef} />
                 <br />
-                
                 <div id='ButtonsDiv-aboutme'>
                     <button ref={githubBtnRef} id='github-button' onClick={() => window.open('https://github.com/DouglasMedeiros1', '_blank')}>
                         <span className="icon-github" style={{display:'inline-flex',alignItems:'center',marginRight:'8px'}}>
@@ -71,31 +68,25 @@ export default function AboutMe() {
                         Linkedin
                     </button>
                 </div>
-                
             </div>
             <div id="ImageDiv-aboutme">
-            <Suspense fallback={<div style={{height: 400}} /> }>
-                <Canvas camera={{ position: [30, 25, 90], fov: 27.5 }}
-                  shadows
-                  dpr={typeof window !== 'undefined' && window.innerWidth < 900 ? 1 : [1, 2]}
-                >
-                    <ambientLight intensity={0.5} />
-                    <directionalLight
-                    position={[20, 40, 30]}
-                    intensity={2.5}
-                    color={'#fff'}
-                    castShadow
-                    shadow-mapSize-width={2048}
-                    shadow-mapSize-height={2048}
-                    shadow-bias={-0.0005}
-                    />
-                    <MeModel scale={5} position={[-10, -32.5, 10]} />
-                    <EffectComposer>
-                        <Bloom luminanceThreshold={0.15} luminanceSmoothing={0.9} intensity={1.2} />
-                    </EffectComposer>
-                    <OrbitControls enableZoom={false} enablePan={false} enableRotate={true} />
+            <Canvas camera={{ position: [30, 25, 90], fov: 27.5 }} shadows dpr={[1, 2]}>
+                <ambientLight intensity={0.5} />
+                <directionalLight
+                position={[20, 40, 30]}
+                intensity={2.5}
+                color={'#fff'}
+                castShadow
+                shadow-mapSize-width={2048}
+                shadow-mapSize-height={2048}
+                shadow-bias={-0.0005}
+                />
+                <MeModel scale={5} position={[-10, -32.5, 10]} />
+                <EffectComposer>
+                    <Bloom luminanceThreshold={0.15} luminanceSmoothing={0.9} intensity={1.2} />
+                </EffectComposer>
+                <OrbitControls enableZoom={false} enablePan={false} enableRotate={true} />
                 </Canvas>
-            </Suspense>
             </div>
         </div>
         </>

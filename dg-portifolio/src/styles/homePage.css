@@ -2,7 +2,6 @@
 #Div-homepage {
     display: flex;
     flex-direction: row;
-    align-items: end;
     margin-top: 20vh;
     flex-wrap: wrap;
 
@@ -36,44 +35,22 @@
     line-height: 0.9;
 }
 
-@media (max-width: 1900px) and (min-width: 1150px) {
-    #Div-homepage {
-        flex-direction: column;
-        margin: 17.5vh auto;
-        width: 90%;
-    }
-    #ColumnDiv-homepage h1 {
-        width:80vw;
-        font-size: 7rem;
-        min-width: unset;
-    }
-    #ColumnDiv-homepage h2, #ColumnDiv-homepage h4 {
-        width: 60vw;
-        min-width: unset;
-    }
-    
-}
-
 
 /* Responsive Styles */
 @media (max-width: 1150px) {
     #Div-homepage {
-        max-width: 90%;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         margin-top: 10vh;
     }
     #ModelDiv-homepage, #ColumnDiv-homepage {
-        width: 70vw;
+        width: 90vw;
         min-width: unset;
     }
     #titleH1-homepage {
-        font-size: 5rem;
+        font-size: 6rem;
     }
-    #ColumnDiv-homepage h2, #ColumnDiv-homepage h4 {
-        font-size: 1.2rem;
-        width: 60vw;
-    }
+
 }
 
 @media (max-width: 750px) {
@@ -85,7 +62,7 @@
         width: 98vw;
     }
     #titleH1-homepage {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
     
     #ColumnDiv-homepage {

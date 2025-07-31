@@ -32,3 +32,10 @@
     max-height: 100vh !important;
   }
 }
+
+@media (max-width: 780px) {
+  .background3d-container{
+    display: none !important;
+  }
+  
+}

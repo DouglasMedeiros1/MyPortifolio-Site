@@ -103,6 +103,17 @@
     color: #fff;
 }
 
+@media (max-width: 1750px) and (min-width: 1110px) {
+    #Div-aboutme {
+        flex-direction: column;
+
+    }
+    #Div-aboutme div {
+        width: 90vw;
+    }
+
+}
+
 /* Responsividade */
 @media (max-width: 1100px) {
     #Div-aboutme {
@@ -159,4 +170,11 @@
         font-size: 0.95rem;
         padding: 12px 0;
     }
+}
+
+@media (max-width: 780px) {
+  #modelColumnDiv-aboutme {
+    display: none !important;
+  }
+  
 }
